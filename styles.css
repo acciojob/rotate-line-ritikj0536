@@ -1,1 +1,23 @@
-/*  your css code here. If applicable */
+/* Basic reset so centering behaves predictably */
+html,body {
+  height: 100%;
+  margin: 0;
+  background: #fff;
+}
+
+/* The rotating line */
+#line {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 200px;
+  height: 2px;
+  background-color: #000000;
+
+  /* keep rotation centered */
+  transform-origin: center center;
+
+  /* hint the browser that transform will change (performance) */
+  will-change: transform;
+}
